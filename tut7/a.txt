@@ -1,0 +1,91 @@
+tester.cpp:50:23: error: 'colour' is a protected member of 'right_triangleWcolor'
+        if(array_1[i].colour == pcolr_target){
+                      ^
+./Polygon_w_color.h:143:22: note: declared protected here
+        polygonColor colour;
+                     ^
+tester.cpp:50:30: error: invalid operands to binary expression ('polygonColor' and 'polygonColorOptions')
+        if(array_1[i].colour == pcolr_target){
+           ~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error:390:1: note: candidate function not viable: no known conversion from 'polygonColor' to 'const std::error_code' for 1st argument
+operator==(const error_code& __x, const error_code& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error:397:1: note: candidate function not viable: no known conversion from 'polygonColor' to 'const std::error_code' for 1st argument
+operator==(const error_code& __x, const error_condition& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error:405:1: note: candidate function not viable: no known conversion from 'polygonColor' to 'const std::error_condition' for 1st argument
+operator==(const error_condition& __x, const error_code& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error:412:1: note: candidate function not viable: no known conversion from 'polygonColor' to 'const std::error_condition' for 1st argument
+operator==(const error_condition& __x, const error_condition& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility:576:1: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'polygonColor'
+operator==(const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:803:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'polygonColor'
+operator==(const reverse_iterator<_Iter1>& __x, const reverse_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:1032:1: note: candidate template ignored: could not match 'istream_iterator<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2, type-parameter-0-3>' against 'polygonColor'
+operator==(const istream_iterator<_Tp, _CharT, _Traits, _Distance>& __x,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:1146:6: note: candidate template ignored: could not match 'istreambuf_iterator<type-parameter-0-0, type-parameter-0-1>' against 'polygonColor'
+bool operator==(const istreambuf_iterator<_CharT,_Traits>& __a,
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:1259:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'polygonColor'
+operator==(const move_iterator<_Iter1>& __x, const move_iterator<_Iter2>& __y)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:1631:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'polygonColor'
+operator==(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:1006:6: note: candidate template ignored: could not match 'allocator<type-parameter-0-0>' against 'polygonColor'
+bool operator==(const allocator<_Tp>&, const allocator<_Up>&) _NOEXCEPT {return true;}
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:1943:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'polygonColor'
+operator==(const unique_ptr<_T1, _D1>& __x, const unique_ptr<_T2, _D2>& __y) {return __x.get() == __y.get();}
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:1979:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'polygonColor'
+operator==(const unique_ptr<_T1, _D1>& __x, nullptr_t) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:1987:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-0, type-parameter-0-1>' against 'polygonColorOptions'
+operator==(nullptr_t, const unique_ptr<_T1, _D1>& __x) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:3400:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'polygonColor'
+operator==(const shared_ptr<_Tp>& __x, const shared_ptr<_Up>& __y) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:3454:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'polygonColor'
+operator==(const shared_ptr<_Tp>& __x, nullptr_t) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:3462:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-0>' against 'polygonColorOptions'
+operator==(nullptr_t, const shared_ptr<_Tp>& __x) _NOEXCEPT
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional_03:1568:1: note: candidate template ignored: could not match 'function<type-parameter-0-0>' against 'polygonColor'
+operator==(const function<_Fp>& __f, nullptr_t) {return !__f;}
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional_03:1573:1: note: candidate template ignored: could not match 'function<type-parameter-0-0>' against 'polygonColorOptions'
+operator==(nullptr_t, const function<_Fp>& __f) {return !__f;}
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:653:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'polygonColor'
+bool operator==(basic_string_view<_CharT, _Traits> __lhs,
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:662:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'polygonColor'
+bool operator==(basic_string_view<_CharT, _Traits> __lhs,
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:671:6: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'polygonColorOptions'
+bool operator==(typename common_type<basic_string_view<_CharT, _Traits> >::type __lhs,
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:570:6: note: candidate template ignored: could not match 'fpos<type-parameter-0-0>' against 'polygonColor'
+bool operator==(const fpos<_StateT>& __x, const fpos<_StateT>& __y)
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4033:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'polygonColor'
+operator==(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4045:1: note: candidate template ignored: could not match 'basic_string<char, std::char_traits<char>, type-parameter-0-0>' against 'polygonColor'
+operator==(const basic_string<char, char_traits<char>, _Allocator>& __lhs,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4064:1: note: candidate template ignored: could not match 'const _CharT *' against 'polygonColor'
+operator==(const _CharT* __lhs,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:4077:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'polygonColor'
+operator==(const basic_string<_CharT,_Traits,_Allocator>& __lhs,
+^
+2 errors generated.

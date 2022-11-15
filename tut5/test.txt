@@ -1,0 +1,1 @@
+If the byte  was found memccpy returns a pointer to the next byte in dest after, otherwise returns null pointer.
